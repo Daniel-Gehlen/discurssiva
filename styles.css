@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #f5f7fa;
+    --text-color: #333;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 20px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+.template-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.template-text {
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.user-input {
+    background-color: #e8f4fc;
+    padding: 2px 4px;
+    border-radius: 3px;
+    border-bottom: 2px solid var(--secondary-color);
+    display: inline-block;
+    min-width: 100px;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.user-input:empty::before {
+    content: attr(data-id);
+    color: #999;
+    font-weight: normal;
+}
+
+.user-input:focus {
+    outline: none;
+    background-color: #d4eaf7;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+#download-btn, #download-final-btn {
+    background-color: var(--accent-color);
+}
+
+#download-btn:hover, #download-final-btn:hover {
+    background-color: #c0392b;
+}
+
+.essay-output {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .template-section {
+        padding: 10px;
+    }
+    
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template de Redação Discursiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Construtor de Redação Discursiva</h1>
+            <p>Preencha os campos destacados para criar sua redação estruturada</p>
+        </header>
+
+        <div class="template-container">
+            <div class="template-section">
+                <h2>Introdução</h2>
+                <div class="template-text" id="introducao">
+                    <p>No cenário contemporâneo, <span class="user-input" contenteditable="true" data-id="tema">[tema principal]</span> 
+                    tem se tornado pauta recorrente, sobretudo em virtude de <span class="user-input" contenteditable="true" data-id="motivo">[motivo da relevância]</span>. 
+                    Nesse contexto, percebe-se que compreender <span class="user-input" contenteditable="true" data-id="ponto-central">[ponto central]</span> 
+                    mostra-se imprescindível para <span class="user-input" contenteditable="true" data-id="impacto">[impacto/consequência]</span>. 
+                    Diante dessa perspectiva, cabe examinar <span class="user-input" contenteditable="true" data-id="aspecto-principal">[aspecto principal]</span>, 
+                    analisando suas implicações e relevância.</p>
+                </div>
+            </div>
+
+            <div class="template-section">
+                <h2>Desenvolvimento - 1º Parágrafo</h2>
+                <div class="template-text" id="desenvolvimento1">
+                    <p>Em primeira análise, convém destacar que <span class="user-input" contenteditable="true" data-id="argumento1">[argumento principal]</span>. 
+                    Isso ocorre porque <span class="user-input" contenteditable="true" data-id="explicacao1">[explicação]</span>, 
+                    conforme demonstra <span class="user-input" contenteditable="true" data-id="exemplo1">[exemplo/dado]</span>. 
+                    Tal circunstância evidencia que, quando adequadamente implementado, esse aspecto contribui significativamente para os resultados almejados. 
+                    Portanto, é inquestionável que essa dimensão representa um fator determinante.</p>
+                </div>
+            </div>
+
+            <div class="template-section">
+                <h2>Desenvolvimento - 2º Parágrafo</h2>
+                <div class="template-text" id="desenvolvimento2">
+                    <p>Ademais, outro ponto relevante reside no fato de que <span class="user-input" contenteditable="true" data-id="argumento2">[argumento secundário]</span>. 
+                    Essa situação decorre de <span class="user-input" contenteditable="true" data-id="explicacao2">[explicação]</span>, 
+                    como ilustra <span class="user-input" contenteditable="true" data-id="exemplo2">[exemplo/dado]</span>. 
+                    Dessa maneira, fica claro que esse elemento não pode ser negligenciado, uma vez que possui relação direta com a eficácia das ações empreendidas. 
+                    Assim, torna-se imperativo considerar essa variável.</p>
+                </div>
+            </div>
+
+            <div class="template-section">
+                <h2>Desenvolvimento - 3º Parágrafo (Opcional)</h2>
+                <div class="template-text" id="desenvolvimento3">
+                    <p>Não obstante os benefícios mencionados, é preciso reconhecer que <span class="user-input" contenteditable="true" data-id="contraponto">[contraponto]</span>. 
+                    Essa problemática surge porque <span class="user-input" contenteditable="true" data-id="explicacao3">[explicação]</span>, 
+                    conforme se observa em <span class="user-input" contenteditable="true" data-id="exemplo3">[exemplo]</span>. 
+                    No entanto, longe de representar um obstáculo intransponível, essa realidade exige apenas que sejam adotadas estratégias adequadas para sua superação.</p>
+                </div>
+            </div>
+
+            <div class="template-section">
+                <h2>Conclusão</h2>
+                <div class="template-text" id="conclusao">
+                    <p>Em síntese, depreende-se que <span class="user-input" contenteditable="true" data-id="tema-conclusao">[retomar tema]</span> 
+                    constitui elemento fundamental para <span class="user-input" contenteditable="true" data-id="area-impacto">[área de impacto]</span>. 
+                    Embora existam desafios, <span class="user-input" contenteditable="true" data-id="argumento-chave">[argumento-chave]</span> 
+                    revela-se como aspecto central para o êxito nessa seara. Logo, <span class="user-input" contenteditable="true" data-id="sugestao">[sugestão/recomendação]</span>, 
+                    de modo a potencializar os benefícios e minimizar as dificuldades encontradas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="generate-btn">Gerar Redação Completa</button>
+            <button id="download-btn">Baixar Redação</button>
+        </div>
+
+        <div class="essay-output hidden">
+            <h2>Sua Redação Completa</h2>
+            <div id="complete-essay"></div>
+            <button id="back-btn">Voltar para Edição</button>
+            <button id="download-final-btn">Baixar Versão Final</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
